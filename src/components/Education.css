@@ -1,0 +1,142 @@
+.education {
+  background: var(--bg-primary);
+}
+
+/* Degree Card */
+.education__degree {
+  display: flex;
+  gap: 32px;
+  padding: 40px;
+  margin-bottom: 60px;
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(0, 230, 118, 0.03) 100%);
+  border-left: 4px solid var(--accent-green);
+}
+
+.education__degree-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--accent-green-dim);
+  color: var(--accent-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.education__degree-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--accent-green);
+  color: var(--bg-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.education__degree-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.education__degree-period {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.education__coursework-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.education__coursework-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.education__coursework-tag {
+  padding: 8px 18px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.education__coursework-tag:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+}
+
+/* Certifications */
+.education__certs {
+  margin-top: 20px;
+}
+
+.education__certs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.education__cert {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.education__cert-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.education__cert-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.education__cert-provider {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+  .education__certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .education__degree {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .education__certs-grid {
+    grid-template-columns: 1fr;
+  }
+}

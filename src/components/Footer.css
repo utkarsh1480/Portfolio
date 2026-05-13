@@ -1,0 +1,35 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 40px 0;
+}
+
+.footer__inner {
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.footer__heart {
+  color: #ef4444;
+  font-size: 0.8rem;
+  animation: pulse 1.5s ease infinite;
+}
+
+.footer__credits {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer__name {
+  color: var(--accent-green);
+  font-weight: 600;
+}
