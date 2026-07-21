@@ -3,10 +3,8 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import projectBlogify from '../assets/project_blogify.png';
 import projectWebScanner from '../assets/project_webscanner.png';
 import projectIntelliview from '../assets/project_intelliview.png';
-import projectHotelBooking from '../assets/project_hotelbooking.png';
 import projectUrlShortener from '../assets/project_urlshortener.png';
 import projectSqlLab from '../assets/project_sqllab.png';
-import projectScatch from '../assets/project_scatch.png';
 import projectNumGuess from '../assets/project_numguess.png';
 import projectHealthcare from '../assets/project_healthcare.png';
 import './Projects.css';
@@ -43,33 +41,12 @@ const projects = [
     category: 'Full Stack',
   },
   {
-    title: 'Hotel & Flight Booking',
-    description:
-      'A MERN stack travel booking platform with authentication, trip listings, booking management, and payment integration.',
-    image: projectHotelBooking,
-    tags: ['MongoDB', 'Express', 'React', 'Node.js'],
-    github: 'https://github.com/utkarsh1480/hotel-flight-booking-platform',
-    live: '',
-    category: 'Full Stack',
-  },
-  {
     title: 'URL Shortener',
     description:
       'A URL shortening service built with the MERN stack, featuring link analytics, click tracking, and a clean dashboard interface.',
     image: projectUrlShortener,
     tags: ['EJS', 'Node.js', 'Express', 'MongoDB'],
     github: 'https://github.com/utkarsh1480/URL-Shortner-',
-    live: '',
-    category: 'Full Stack',
-  },
-
-  {
-    title: 'Scatch',
-    description:
-      'An e-commerce web application with product catalog, shopping cart, user authentication, and order management.',
-    image: projectScatch,
-    tags: ['JavaScript', 'Node.js', 'Express', 'MongoDB'],
-    github: 'https://github.com/utkarsh1480/Scatch',
     live: '',
     category: 'Full Stack',
   },

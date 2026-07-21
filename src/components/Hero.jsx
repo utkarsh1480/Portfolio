@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
-import { HiArrowDown } from 'react-icons/hi';
+import { HiArrowDown, HiDownload } from 'react-icons/hi';
 import profileImg from '../assets/profile.jpg';
 import './Hero.css';
 
@@ -91,6 +91,15 @@ export default function Hero() {
               <Link to="projects" smooth={true} duration={600} offset={-80}>
                 <button className="btn-outline">View Projects</button>
               </Link>
+              <a
+                href="https://drive.google.com/file/d/17dONeS8EunxmfhSb9D5Y6mPj7GIhiAEQ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline"
+              >
+                Resume
+                <HiDownload />
+              </a>
             </div>
 
             <div className="hero__socials animate-fadeInUp delay-6">
